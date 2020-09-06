@@ -7,11 +7,11 @@ Sheet 1 3
 Title "kbd-numpad-feral-cat"
 Date "2020-08-13"
 Rev "revA"
-Comp "github.com/gimbas"
+Comp "github.com/perigoso"
 Comment1 ""
 Comment2 ""
 Comment3 "Design by: Rafael Silva"
-Comment4 "Licensed under CERN-OHL-W v2"
+Comment4 "Licensed under CERN Open Hardware Licence v2 Permissive"
 $EndDescr
 $Sheet
 S 7000 2500 1000 1000
@@ -210,17 +210,6 @@ Wire Wire Line
 	5050 4850 4750 4850
 Wire Wire Line
 	5900 4950 5550 4950
-$Comp
-L Connector_Generic:Conn_02x25_Counter_Clockwise J1
-U 1 1 612DE44A
-P 5350 3750
-F 0 "J1" H 5400 5167 50  0000 C CNN
-F 1 "Conn_02x25_Counter_Clockwise" H 5400 5076 50  0000 C CNN
-F 2 "Connector_FFC-FPC:TE_5-1734839-0_1x50-1MP_P0.5mm_Horizontal" H 5350 3750 50  0001 C CNN
-F 3 "~" H 5350 3750 50  0001 C CNN
-	1    5350 3750
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 2550 4650 2550
 Wire Wire Line
@@ -325,7 +314,7 @@ Connection ~ 4650 2950
 Wire Wire Line
 	4550 2850 4650 2850
 Connection ~ 4650 2850
-Text Label 4500 4150 0    50   ~ 0
+Text Label 4500 3450 0    50   ~ 0
 LED_DAT1
 $Comp
 L Device:C_Small C?
@@ -371,14 +360,6 @@ F 3 "" H 4150 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5050 3350
-NoConn ~ 5050 3450
-NoConn ~ 5050 3550
-NoConn ~ 5050 3650
-NoConn ~ 5050 3750
-NoConn ~ 5050 3850
-NoConn ~ 5050 3950
-NoConn ~ 5050 4050
-NoConn ~ 5050 4250
 Wire Wire Line
 	7000 3850 6500 3850
 Wire Wire Line
@@ -386,15 +367,74 @@ Wire Wire Line
 Wire Wire Line
 	6500 5200 4250 5200
 Wire Wire Line
-	4250 5200 4250 4150
+	4250 5200 4250 3450
 Wire Wire Line
-	5050 4150 4250 4150
+	5050 3450 4250 3450
 Wire Wire Line
 	5850 3850 5550 3850
+$Comp
+L Connector_Generic:Conn_02x25_Counter_Clockwise J1
+U 1 1 612DE44A
+P 5350 3750
+F 0 "J1" H 5400 5167 50  0000 C CNN
+F 1 "Conn_02x25_Counter_Clockwise" H 5400 5076 50  0000 C CNN
+F 2 "Connector_FFC-FPC:TE_5-1734839-0_1x50-1MP_P0.5mm_Horizontal" H 5350 3750 50  0001 C CNN
+F 3 "~" H 5350 3750 50  0001 C CNN
+	1    5350 3750
+	-1   0    0    -1  
+$EndComp
+Text Label 5050 4250 2    50   ~ 0
+COL8
+Text Label 5050 4150 2    50   ~ 0
+COL9
+Text Label 5050 4050 2    50   ~ 0
+COL10
+Text Label 5050 3950 2    50   ~ 0
+COL11
+Text Label 5050 3850 2    50   ~ 0
+COL12
+Text Label 5050 3750 2    50   ~ 0
+COL13
+Text Label 5050 3650 2    50   ~ 0
+COL14
+Text Label 5050 3550 2    50   ~ 0
+COL15
+Entry Wire Line
+	4750 4250 4650 4350
+Wire Wire Line
+	5050 4250 4750 4250
+Entry Wire Line
+	4750 4150 4650 4250
+Wire Wire Line
+	5050 4150 4750 4150
+Entry Wire Line
+	4750 4050 4650 4150
+Wire Wire Line
+	5050 4050 4750 4050
+Entry Wire Line
+	4750 3950 4650 4050
+Wire Wire Line
+	5050 3950 4750 3950
+Entry Wire Line
+	4750 3850 4650 3950
+Wire Wire Line
+	5050 3850 4750 3850
+Entry Wire Line
+	4750 3750 4650 3850
+Wire Wire Line
+	5050 3750 4750 3750
+Entry Wire Line
+	4750 3650 4650 3750
+Wire Wire Line
+	5050 3650 4750 3650
+Entry Wire Line
+	4750 3550 4650 3650
+Wire Wire Line
+	5050 3550 4750 3550
 Wire Bus Line
 	6000 2500 6000 4950
 Wire Bus Line
-	4650 4450 4650 4950
+	4650 3650 4650 4950
 Wire Bus Line
 	5950 2450 5950 4750
 $EndSCHEMATC

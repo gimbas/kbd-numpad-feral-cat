@@ -1,0 +1,667 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 2 3
+Title "kbd-numpad-feral-cat"
+Date "2020-08-13"
+Rev "revA"
+Comp "github.com/perigoso"
+Comment1 ""
+Comment2 ""
+Comment3 "Design by: Rafael Silva"
+Comment4 "Licensed under CERN Open Hardware Licence v2 Permissive"
+$EndDescr
+Entry Wire Line
+	5000 5100 4900 5000
+Entry Wire Line
+	6000 5100 5900 5000
+Entry Wire Line
+	7000 5100 6900 5000
+Entry Wire Line
+	8000 5100 7900 5000
+Entry Wire Line
+	4100 6000 4000 6100
+Entry Wire Line
+	4100 7000 4000 7100
+Entry Wire Line
+	4100 8000 4000 8100
+Entry Wire Line
+	4100 9000 4000 9100
+Entry Wire Line
+	4100 10000 4000 10100
+Text Label 4000 5000 0    50   ~ 0
+ROW[0..15]
+Text HLabel 4000 5000 0    50   Input ~ 0
+ROW[0..15]
+Text Label 5000 5100 3    50   ~ 0
+ROW0
+Text Label 6000 5100 3    50   ~ 0
+ROW1
+Text Label 7000 5100 3    50   ~ 0
+ROW2
+Text Label 8000 5100 3    50   ~ 0
+ROW3
+Text HLabel 4000 10500 3    50   Output ~ 0
+COL[0..5]
+Text Label 4000 10450 1    50   ~ 0
+COL[0..5]
+Text Label 4100 6000 0    50   ~ 0
+COL0
+Text Label 4100 7000 0    50   ~ 0
+COL1
+Text Label 4100 8000 0    50   ~ 0
+COL2
+Text Label 4100 9000 0    50   ~ 0
+COL3
+Text Label 4100 10000 0    50   ~ 0
+COL4
+Wire Wire Line
+	4100 8000 4400 8000
+Wire Wire Line
+	4100 7000 4400 7000
+Wire Wire Line
+	4100 10000 4400 10000
+Wire Wire Line
+	4100 9000 4400 9000
+Wire Wire Line
+	8000 5100 8000 5600
+Wire Wire Line
+	7000 5100 7000 5600
+Wire Wire Line
+	5000 5100 5000 5600
+Wire Wire Line
+	6000 5100 6000 5600
+Wire Wire Line
+	4100 6000 4400 6000
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5F2D9580
+P 5700 5600
+F 0 "SW6" H 5700 5885 50  0000 C CNN
+F 1 "1U" H 5700 5794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5700 5800 50  0001 C CNN
+F 3 "~" H 5700 5800 50  0001 C CNN
+	1    5700 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5600 5400 5600
+Wire Wire Line
+	5400 5600 5400 5700
+$Comp
+L Device:D_Small D6
+U 1 1 5F2DAA51
+P 5400 5800
+F 0 "D6" V 5400 5730 50  0000 R CNN
+F 1 "D_Small" V 5355 5730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 5400 5800 50  0001 C CNN
+F 3 "~" V 5400 5800 50  0001 C CNN
+	1    5400 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 5900 5400 6000
+Connection ~ 5400 6000
+Wire Wire Line
+	5400 6000 6400 6000
+Wire Wire Line
+	5900 5600 6000 5600
+Connection ~ 6000 5600
+Wire Wire Line
+	6000 5600 6000 6600
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F2DDFCF
+P 4700 5600
+F 0 "SW1" H 4700 5885 50  0000 C CNN
+F 1 "1U" H 4700 5794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 4700 5800 50  0001 C CNN
+F 3 "~" H 4700 5800 50  0001 C CNN
+	1    4700 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5600 4400 5600
+Wire Wire Line
+	4400 5600 4400 5700
+$Comp
+L Device:D_Small D1
+U 1 1 5F2DDFD7
+P 4400 5800
+F 0 "D1" V 4400 5730 50  0000 R CNN
+F 1 "D_Small" V 4355 5730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 4400 5800 50  0001 C CNN
+F 3 "~" V 4400 5800 50  0001 C CNN
+	1    4400 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5F2DF8CC
+P 6700 5600
+F 0 "SW10" H 6700 5885 50  0000 C CNN
+F 1 "1U" H 6700 5794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6700 5800 50  0001 C CNN
+F 3 "~" H 6700 5800 50  0001 C CNN
+	1    6700 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5600 6400 5600
+Wire Wire Line
+	6400 5600 6400 5700
+$Comp
+L Device:D_Small D10
+U 1 1 5F2DF8D4
+P 6400 5800
+F 0 "D10" V 6400 5730 50  0000 R CNN
+F 1 "D_Small" V 6355 5730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 6400 5800 50  0001 C CNN
+F 3 "~" V 6400 5800 50  0001 C CNN
+	1    6400 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW15
+U 1 1 5F2E0C2D
+P 7700 5600
+F 0 "SW15" H 7700 5885 50  0000 C CNN
+F 1 "1U" H 7700 5794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 7700 5800 50  0001 C CNN
+F 3 "~" H 7700 5800 50  0001 C CNN
+	1    7700 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5600 7400 5600
+Wire Wire Line
+	7400 5600 7400 5700
+$Comp
+L Device:D_Small D15
+U 1 1 5F2E0C35
+P 7400 5800
+F 0 "D15" V 7400 5730 50  0000 R CNN
+F 1 "D_Small" V 7355 5730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 7400 5800 50  0001 C CNN
+F 3 "~" V 7400 5800 50  0001 C CNN
+	1    7400 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW16
+U 1 1 5F328157
+P 7700 6600
+F 0 "SW16" H 7700 6885 50  0000 C CNN
+F 1 "2U" H 7700 6794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-2U-ReversedStabilizers-Rotated-NoLED" H 7700 6800 50  0001 C CNN
+F 3 "~" H 7700 6800 50  0001 C CNN
+	1    7700 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 6600 7400 6600
+Wire Wire Line
+	7400 6600 7400 6700
+$Comp
+L Device:D_Small D16
+U 1 1 5F32815F
+P 7400 6800
+F 0 "D16" V 7400 6730 50  0000 R CNN
+F 1 "D_Small" V 7355 6730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 7400 6800 50  0001 C CNN
+F 3 "~" V 7400 6800 50  0001 C CNN
+	1    7400 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW11
+U 1 1 5F32DD66
+P 6700 6600
+F 0 "SW11" H 6700 6885 50  0000 C CNN
+F 1 "1U" H 6700 6794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6700 6800 50  0001 C CNN
+F 3 "~" H 6700 6800 50  0001 C CNN
+	1    6700 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 6600 6400 6600
+Wire Wire Line
+	6400 6600 6400 6700
+$Comp
+L Device:D_Small D11
+U 1 1 5F32DD6E
+P 6400 6800
+F 0 "D11" V 6400 6730 50  0000 R CNN
+F 1 "D_Small" V 6355 6730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 6400 6800 50  0001 C CNN
+F 3 "~" V 6400 6800 50  0001 C CNN
+	1    6400 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5F334722
+P 5700 6600
+F 0 "SW7" H 5700 6885 50  0000 C CNN
+F 1 "1U" H 5700 6794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5700 6800 50  0001 C CNN
+F 3 "~" H 5700 6800 50  0001 C CNN
+	1    5700 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6600 5400 6600
+Wire Wire Line
+	5400 6600 5400 6700
+$Comp
+L Device:D_Small D7
+U 1 1 5F33472A
+P 5400 6800
+F 0 "D7" V 5400 6730 50  0000 R CNN
+F 1 "D_Small" V 5355 6730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 5400 6800 50  0001 C CNN
+F 3 "~" V 5400 6800 50  0001 C CNN
+	1    5400 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5F33B115
+P 4700 6600
+F 0 "SW2" H 4700 6885 50  0000 C CNN
+F 1 "1U" H 4700 6794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 4700 6800 50  0001 C CNN
+F 3 "~" H 4700 6800 50  0001 C CNN
+	1    4700 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6600 4400 6600
+Wire Wire Line
+	4400 6600 4400 6700
+$Comp
+L Device:D_Small D2
+U 1 1 5F33B11D
+P 4400 6800
+F 0 "D2" V 4400 6730 50  0000 R CNN
+F 1 "D_Small" V 4355 6730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 4400 6800 50  0001 C CNN
+F 3 "~" V 4400 6800 50  0001 C CNN
+	1    4400 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5F3420ED
+P 4700 7600
+F 0 "SW3" H 4700 7885 50  0000 C CNN
+F 1 "1U" H 4700 7794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 4700 7800 50  0001 C CNN
+F 3 "~" H 4700 7800 50  0001 C CNN
+	1    4700 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 7600 4400 7600
+Wire Wire Line
+	4400 7600 4400 7700
+$Comp
+L Device:D_Small D3
+U 1 1 5F3420F5
+P 4400 7800
+F 0 "D3" V 4400 7730 50  0000 R CNN
+F 1 "D_Small" V 4355 7730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 4400 7800 50  0001 C CNN
+F 3 "~" V 4400 7800 50  0001 C CNN
+	1    4400 7800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 5F3497A5
+P 6700 7600
+F 0 "SW12" H 6700 7885 50  0000 C CNN
+F 1 "1U" H 6700 7794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6700 7800 50  0001 C CNN
+F 3 "~" H 6700 7800 50  0001 C CNN
+	1    6700 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 7600 6400 7600
+Wire Wire Line
+	6400 7600 6400 7700
+$Comp
+L Device:D_Small D12
+U 1 1 5F3497AD
+P 6400 7800
+F 0 "D12" V 6400 7730 50  0000 R CNN
+F 1 "D_Small" V 6355 7730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 6400 7800 50  0001 C CNN
+F 3 "~" V 6400 7800 50  0001 C CNN
+	1    6400 7800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5F497AA6
+P 4700 9600
+F 0 "SW5" H 4700 9885 50  0000 C CNN
+F 1 "2U" H 4700 9794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-2U-ReversedStabilizers-NoLED" H 4700 9800 50  0001 C CNN
+F 3 "~" H 4700 9800 50  0001 C CNN
+	1    4700 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 9600 4400 9600
+Wire Wire Line
+	4400 9600 4400 9700
+$Comp
+L Device:D_Small D5
+U 1 1 5F497AAE
+P 4400 9800
+F 0 "D5" V 4400 9730 50  0000 R CNN
+F 1 "D_Small" V 4355 9730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 4400 9800 50  0001 C CNN
+F 3 "~" V 4400 9800 50  0001 C CNN
+	1    4400 9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 5F4BE14F
+P 6700 9600
+F 0 "SW14" H 6700 9885 50  0000 C CNN
+F 1 "1U" H 6700 9794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6700 9800 50  0001 C CNN
+F 3 "~" H 6700 9800 50  0001 C CNN
+	1    6700 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 9600 6400 9600
+Wire Wire Line
+	6400 9600 6400 9700
+$Comp
+L Device:D_Small D14
+U 1 1 5F4BE157
+P 6400 9800
+F 0 "D14" V 6400 9730 50  0000 R CNN
+F 1 "D_Small" V 6355 9730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 6400 9800 50  0001 C CNN
+F 3 "~" V 6400 9800 50  0001 C CNN
+	1    6400 9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW17
+U 1 1 5F72C582
+P 7700 8600
+F 0 "SW17" H 7700 8885 50  0000 C CNN
+F 1 "2U" H 7700 8794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-2U-ReversedStabilizers-Rotated-NoLED" H 7700 8800 50  0001 C CNN
+F 3 "~" H 7700 8800 50  0001 C CNN
+	1    7700 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 8600 7400 8600
+Wire Wire Line
+	7400 8600 7400 8700
+$Comp
+L Device:D_Small D17
+U 1 1 5F72C58A
+P 7400 8800
+F 0 "D17" V 7400 8730 50  0000 R CNN
+F 1 "D_Small" V 7355 8730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 7400 8800 50  0001 C CNN
+F 3 "~" V 7400 8800 50  0001 C CNN
+	1    7400 8800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW13
+U 1 1 5F74FF47
+P 6700 8600
+F 0 "SW13" H 6700 8885 50  0000 C CNN
+F 1 "1U" H 6700 8794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6700 8800 50  0001 C CNN
+F 3 "~" H 6700 8800 50  0001 C CNN
+	1    6700 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 8600 6400 8600
+Wire Wire Line
+	6400 8600 6400 8700
+$Comp
+L Device:D_Small D13
+U 1 1 5F74FF4F
+P 6400 8800
+F 0 "D13" V 6400 8730 50  0000 R CNN
+F 1 "D_Small" V 6355 8730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 6400 8800 50  0001 C CNN
+F 3 "~" V 6400 8800 50  0001 C CNN
+	1    6400 8800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5F774A78
+P 4700 8600
+F 0 "SW4" H 4700 8885 50  0000 C CNN
+F 1 "1U" H 4700 8794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 4700 8800 50  0001 C CNN
+F 3 "~" H 4700 8800 50  0001 C CNN
+	1    4700 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 8600 4400 8600
+Wire Wire Line
+	4400 8600 4400 8700
+$Comp
+L Device:D_Small D4
+U 1 1 5F774A80
+P 4400 8800
+F 0 "D4" V 4400 8730 50  0000 R CNN
+F 1 "D_Small" V 4355 8730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 4400 8800 50  0001 C CNN
+F 3 "~" V 4400 8800 50  0001 C CNN
+	1    4400 8800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 5600 8000 5600
+Wire Wire Line
+	7400 5900 7400 6000
+Wire Wire Line
+	6900 5600 7000 5600
+Connection ~ 7000 5600
+Wire Wire Line
+	7000 5600 7000 6600
+Wire Wire Line
+	6400 5900 6400 6000
+Connection ~ 6400 6000
+Wire Wire Line
+	6400 6000 7400 6000
+Wire Wire Line
+	4900 5600 5000 5600
+Connection ~ 5000 5600
+Wire Wire Line
+	5000 5600 5000 6600
+Wire Wire Line
+	4400 5900 4400 6000
+Connection ~ 4400 6000
+Wire Wire Line
+	4400 6000 5400 6000
+Wire Wire Line
+	4900 6600 5000 6600
+Connection ~ 5000 6600
+Wire Wire Line
+	5000 6600 5000 7600
+Wire Wire Line
+	4400 6900 4400 7000
+Connection ~ 4400 7000
+Wire Wire Line
+	4400 7000 5400 7000
+Wire Wire Line
+	5900 6600 6000 6600
+Connection ~ 6000 6600
+Wire Wire Line
+	6000 6600 6000 7600
+Wire Wire Line
+	5400 6900 5400 7000
+Connection ~ 5400 7000
+Wire Wire Line
+	5400 7000 6400 7000
+Wire Wire Line
+	6400 6900 6400 7000
+Connection ~ 6400 7000
+Wire Wire Line
+	6400 7000 7400 7000
+Wire Wire Line
+	6900 6600 7000 6600
+Connection ~ 7000 6600
+Wire Wire Line
+	7000 6600 7000 7600
+Wire Wire Line
+	7400 6900 7400 7000
+Connection ~ 8000 5600
+Wire Wire Line
+	8000 5600 8000 6600
+Wire Wire Line
+	7900 6600 8000 6600
+Connection ~ 8000 6600
+Wire Wire Line
+	6900 7600 7000 7600
+Connection ~ 7000 7600
+Wire Wire Line
+	7000 7600 7000 8600
+Wire Wire Line
+	6400 7900 6400 8000
+Wire Wire Line
+	4900 7600 5000 7600
+Connection ~ 5000 7600
+Wire Wire Line
+	5000 7600 5000 8600
+Wire Wire Line
+	4400 8000 4400 7900
+Connection ~ 4400 8000
+Wire Wire Line
+	4400 8000 5400 8000
+Wire Wire Line
+	4900 8600 5000 8600
+Connection ~ 5000 8600
+Wire Wire Line
+	5000 8600 5000 9600
+Wire Wire Line
+	4400 9000 4400 8900
+Connection ~ 4400 9000
+Wire Wire Line
+	4400 9000 5400 9000
+Wire Wire Line
+	6400 9000 6400 8900
+Connection ~ 6400 9000
+Wire Wire Line
+	6400 9000 7400 9000
+Wire Wire Line
+	6900 8600 7000 8600
+Connection ~ 7000 8600
+Wire Wire Line
+	7400 8900 7400 9000
+Wire Wire Line
+	7900 8600 8000 8600
+Wire Wire Line
+	6900 9600 7000 9600
+Wire Wire Line
+	7000 8600 7000 9600
+Wire Wire Line
+	6400 9900 6400 10000
+Wire Wire Line
+	4900 9600 5000 9600
+Wire Wire Line
+	4400 9900 4400 10000
+Connection ~ 4400 10000
+Wire Wire Line
+	8000 6600 8000 8600
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5F44E8F6
+P 5700 8600
+F 0 "SW9" H 5700 8885 50  0000 C CNN
+F 1 "1U" H 5700 8794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5700 8800 50  0001 C CNN
+F 3 "~" H 5700 8800 50  0001 C CNN
+	1    5700 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 8600 5400 8600
+Wire Wire Line
+	5400 8600 5400 8700
+$Comp
+L Device:D_Small D9
+U 1 1 5F44E8FE
+P 5400 8800
+F 0 "D9" V 5400 8730 50  0000 R CNN
+F 1 "D_Small" V 5355 8730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 5400 8800 50  0001 C CNN
+F 3 "~" V 5400 8800 50  0001 C CNN
+	1    5400 8800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5F451D43
+P 5700 7600
+F 0 "SW8" H 5700 7885 50  0000 C CNN
+F 1 "1U" H 5700 7794 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5700 7800 50  0001 C CNN
+F 3 "~" H 5700 7800 50  0001 C CNN
+	1    5700 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 7600 5400 7600
+Wire Wire Line
+	5400 7600 5400 7700
+$Comp
+L Device:D_Small D8
+U 1 1 5F451D4B
+P 5400 7800
+F 0 "D8" V 5400 7730 50  0000 R CNN
+F 1 "D_Small" V 5355 7730 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-323F" V 5400 7800 50  0001 C CNN
+F 3 "~" V 5400 7800 50  0001 C CNN
+	1    5400 7800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 7600 6000 7600
+Connection ~ 6000 7600
+Wire Wire Line
+	6000 7600 6000 8600
+Wire Wire Line
+	5400 7900 5400 8000
+Connection ~ 5400 8000
+Wire Wire Line
+	5400 8000 6400 8000
+Wire Wire Line
+	5900 8600 6000 8600
+Wire Wire Line
+	5400 8900 5400 9000
+Connection ~ 5400 9000
+Wire Wire Line
+	5400 9000 6400 9000
+Wire Wire Line
+	4400 10000 6400 10000
+Wire Bus Line
+	4000 6100 4000 10500
+Wire Bus Line
+	4000 5000 7900 5000
+$EndSCHEMATC
